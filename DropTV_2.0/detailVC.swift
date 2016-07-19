@@ -240,16 +240,11 @@ class detailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         else{
             
-          //  let testImg: UIImage = UIImage(named:"detail_no_photo_art-568h@2x.png")!
             let tempImg = UIImageView (image: UIImage (named: "detail_no_photo_art-568h@2x.png"))
-            
-            
-            //tempImg.contentMode = .ScaleAspectFit
             
             let cell = tableView.dequeueReusableCellWithIdentifier("tagInfoCell", forIndexPath: indexPath) as! tagInfoCell
             cell.myButton.contentMode = .ScaleAspectFit
-            //cell.myButton.contentVerticalAlignment = .Fill
-             //   cell.myButton.contentHorizontalAlignment = .Fill
+          
             if appdelegateObj.infoCount > 0{
                 var urlStr:String
                 urlStr = appdelegateObj.infoImgArray[indexPath.row]
@@ -260,8 +255,6 @@ class detailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 
                 cell.myButton.tag = indexPath.row
                 cell.myButton.addTarget(self, action: #selector(detailVC.didTab(_:)), forControlEvents: .TouchUpInside)
-                
-                
                 
             }
             cell.setNeedsUpdateConstraints()

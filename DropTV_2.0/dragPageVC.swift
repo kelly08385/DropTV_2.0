@@ -64,11 +64,16 @@ class dragPageVC: UIViewController,UICollectionViewDelegate,UICollectionViewData
         let frame  = self.view.frame;
         
         var width = frame.width
+        //抓button自適應
+        var cut:CGFloat = 12
+        if (width < 400){
+            cut = 4
+        }
         var height = frame.height
         let tabbarH = (self.tabBarController?.tabBar.frame.size.height)!
         let navigationH = (self.navigationController?.navigationBar.frame.size.height)!
         
-        width = CGFloat(Int((width-4)/2))
+        width = CGFloat(Int((width - cut)/2))
         height = CGFloat((height - navigationH - tabbarH - 16)/4)
         
         return CGSize(width: width, height: height)

@@ -68,7 +68,7 @@ class classifyVC: UITableViewController {
         cell.menuLb.text = tableArray[indexPath.row]
         
         let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor.redColor()
+        backgroundView.backgroundColor = UIColor(red: 218/255, green: 59/255, blue: 38/255, alpha: 1)
         cell.selectedBackgroundView = backgroundView
         cell.menuImg.highlightedImage = UIImage(named: "\(highmenuImgAry[indexPath.row])")
         

@@ -30,13 +30,13 @@ class CustomTabBarController: UITabBarController {
         
         //文字變色
         item1.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.darkGrayColor()], forState: UIControlState.Normal)
-        item1.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218, green: 0, blue: 0, alpha: 1)], forState: UIControlState.Selected)
+        item1.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218/255, green: 59/255, blue: 38/255, alpha: 1)], forState: UIControlState.Selected)
         
         item2.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.darkGrayColor()], forState: UIControlState.Normal)
-        item2.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218, green: 0, blue: 0, alpha: 1)], forState: UIControlState.Selected)
+        item2.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218/255, green: 59/255, blue: 38/255, alpha: 1)], forState: UIControlState.Selected)
         
         item3.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.darkGrayColor()], forState: UIControlState.Normal)
-        item3.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218, green: 0, blue: 0, alpha: 1)], forState: UIControlState.Selected)
+        item3.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 218/255, green: 59/255, blue: 38/255, alpha: 1)], forState: UIControlState.Selected)
         
         if appdelegateObj.readNum > 0{
             item2.badgeValue = "\(appdelegateObj.readNum)"
