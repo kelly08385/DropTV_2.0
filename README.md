@@ -25,4 +25,4 @@
   pod 'SDWebImage', '~>3.8'
   ```
 2. 若還是無法正確安裝，直接點擊以下連結來下載專案，並雙擊`DropTV_2.0.xcworkspace`來開啟專案  
-[Drop_TV2.0](https://drive.google.com/file/d/0B3aw3gNoYvlhWnJvTGYxcGl0aU0/view?usp=sharing)
+[Drop_TV2.0](https://drive.google.com/drive/folders/0B3qPXYNaUSw5WUlmMm1RZkRDdWc?usp=sharing)
